@@ -16,32 +16,46 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <link rel="stylesheet" href="../theme/basic/css/reset.css" />
+<link rel="stylesheet" href="../theme/basic/css/util.css" />
 <link rel="stylesheet" href="../theme/basic/css/style.css" />
+
   <!-- 상단 시작 { -->
     <div id="hd" class="header_pc">
     <div class="header_wrap">
       <div class="header_inn">
         <div class="logo"><a href="../../../index.php">LOGO</a></div>
         <nav class="navi">
-          <ul>
+          <ul class="h4">
             <li>
               <a href="../../../index.php">홈으로가기</a>
             </li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li onclick="adminHandler()">admin</li>
           </ul>
         </nav>
       </div>
     </div>
     <!-- } 상단 끝 -->
+<script>
+  function adminHandler() {
+    let asideadmin = document.querySelector('.asideadmin');
+    console.log(asideadmin)
+    asideadmin.classList.toggle('on')
+  }
+</script>
 
 
 <hr>
 
+
+
 <!-- 콘텐츠 시작 { -->
 <div id="wrapper">
-    <div id="container_wr">
-   
+  <div id="container_wr">
     <div id="container">
+      <main class="main">
+sdfsdf
+      </main>
         <?php if (!defined("_INDEX_")) { ?><h2 id="container_title"><span title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></span></h2><?php }

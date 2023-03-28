@@ -30,3 +30,17 @@ body {
     }
   }
 }
+
+.asideadmin {
+  background: white;
+  position: absolute;
+  right: 16px;
+  top: 60px;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  max-height: 200px;
+}
+.asideadmin.on {
+  display: block;
+}
